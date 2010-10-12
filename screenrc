@@ -4,7 +4,9 @@ bind ^u encoding utf8
 bind ^e encoding euc
 
 bind s eval split focus "select 0"
+bind | eval 'split -v' focus "select 0"
 bind X remove
+bind x remove
 
 bind r eval 'echo "Resize window"' 'command -c resize'
 bind -c resize + eval 'resize +1' 'command -c resize'
